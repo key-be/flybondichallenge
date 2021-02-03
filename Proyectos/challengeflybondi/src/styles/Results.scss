@@ -22,3 +22,17 @@
     padding: 0 30px;
   }
 }
+
+@media only screen and (max-width: 899px) {
+  .search-container {
+    flex-direction: column;
+
+    .cards-container {
+      width: 100%;
+    }
+
+    .resume-container {
+      display: none;
+    }
+  }
+}

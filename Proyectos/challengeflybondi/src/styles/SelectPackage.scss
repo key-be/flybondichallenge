@@ -117,4 +117,27 @@
   margin: 0 auto;
   margin-top: 15px;
   outline: none;
+  transition: all ease 0.5s;
+
+  &:hover {
+    background-color: #fdda78;
+  }
+}
+
+@media only screen and (max-width: 599px) {
+  .packages-list {
+    flex-direction: column;
+
+    .column {
+      width: 100%;
+    }
+  }
+
+  .amenities {
+    margin-bottom: 20px;
+  }
+
+  .item {
+    padding: 5px 0;
+  }
 }

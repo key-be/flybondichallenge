@@ -1,18 +1,22 @@
 import * as React from 'react';
+import GeneralButton from './generalButton';
 
 interface IToggleButton{
-  style: string;
   text: string;
+  style: string;
   icon?: string;
 }
 
 class ToggleButton extends React.Component <IToggleButton>{
 
   render(){
-    return <button className={this.props.style}>
-      {this.props.text}
-      {this.props.icon}
-    </button>
+    return <GeneralButton 
+      text={this.props.text}
+      style={this.props.style}
+      icon={this.props.icon}
+      //handleClick={() => this.onClickHandler()}
+    />
+
   }
 }
 

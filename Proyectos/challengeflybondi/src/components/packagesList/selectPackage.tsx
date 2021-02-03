@@ -1,5 +1,5 @@
 import * as React from 'react';
-import '../../styles/cardFlight/SelectPackage.scss';
+import '../../styles/SelectPackage.scss';
 import ToggleButton from '../buttons/toogleButton';
 import SaleBrand from '../saleBrand';
 import Packages from './packages';

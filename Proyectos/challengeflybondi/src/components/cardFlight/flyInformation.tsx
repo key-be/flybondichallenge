@@ -1,5 +1,5 @@
 import * as React from 'react';
-import '../../styles/cardFlight/FlyInformation.scss'
+import '../../styles/CardFlight.scss'
 
 class FlyInformation extends React.Component{
   render(){

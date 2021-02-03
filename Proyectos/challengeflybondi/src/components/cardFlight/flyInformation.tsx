@@ -12,8 +12,10 @@ class FlyInformation extends React.Component{
       <span className='city'>Buenos Aires</span>
       <span className='airpot'>EZE</span>
     </div>
-    <div className=''>
-      
+    <div className='flight-time'>
+      <span></span>
+      <span className='duration'>04hs 00min</span>
+      <span className='flight-code'>FO45GT</span>
     </div>
     <div className='column right'>
       <span className='time'>12:30</span>

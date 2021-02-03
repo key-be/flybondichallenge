@@ -10,7 +10,7 @@ class SelectPackage extends React.Component{
     const packagesContainer = 
     <div className='package-header'>
       <div className='package-selected'>
-        <p>Pack Liviano</p>
+        <p>Pack Viajero Light</p>
         <SaleBrand discount="15% OFF" />
       </div>
       <div className='change-package'>

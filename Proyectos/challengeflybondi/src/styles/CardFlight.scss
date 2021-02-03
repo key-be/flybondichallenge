@@ -11,6 +11,28 @@
   padding: 25px 15px;
 }
 
+.flight-time {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-top: 1px solid #fdbe15;
+  width: 100%;
+  margin: 12px;
+
+  .duration {
+    font-size: 10px;
+    font-weight: 400;
+    color: #636680;
+  }
+
+  .flight-code {
+    font-size: 10px;
+    font-weight: 400;
+    color: #636680;
+    line-height: 0.8;
+  }
+}
+
 .fly-information {
   width: 50%;
   display: flex;

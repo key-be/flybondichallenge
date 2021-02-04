@@ -13,23 +13,35 @@
 
 .flight-time {
   display: flex;
-  flex-direction: column;
+  justify-content: center;
   align-items: center;
   border-top: 1px solid #fdbe15;
   width: 100%;
   margin: 12px;
 
-  .duration {
-    font-size: 10px;
-    font-weight: 400;
-    color: #636680;
-  }
+  .flight-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
 
-  .flight-code {
-    font-size: 10px;
-    font-weight: 400;
-    color: #636680;
-    line-height: 0.8;
+    img {
+      background-color: #fff;
+      padding: 5px;
+    }
+
+    .duration {
+      font-size: 9px;
+      font-weight: 400;
+      color: #636680;
+    }
+
+    .flight-code {
+      font-size: 10px;
+      font-weight: 400;
+      color: #636680;
+      line-height: 0.8;
+    }
   }
 }
 

@@ -1,5 +1,6 @@
 import * as React from 'react';
-import '../../styles/CardFlight.scss'
+import '../../styles/CardFlight.scss';
+import flight from '../../assets/icons/iconFlight.svg';
 
 class FlyInformation extends React.Component{
   render(){
@@ -13,9 +14,11 @@ class FlyInformation extends React.Component{
       <span className='airpot'>EZE</span>
     </div>
     <div className='flight-time'>
-      <span></span>
-      <span className='duration'>04hs 00min</span>
-      <span className='flight-code'>FO45GT</span>
+      <div className='flight-box'>
+        <img src={flight} alt=""/>
+        <span className='duration'>04hs 00min</span>
+        <span className='flight-code'>FO45GT</span>
+      </div>
     </div>
     <div className='column right'>
       <span className='time'>12:30</span>

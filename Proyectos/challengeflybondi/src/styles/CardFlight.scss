@@ -18,12 +18,14 @@
   border-top: 1px solid #fdbe15;
   width: 100%;
   margin: 12px;
+  position: relative;
 
   .flight-box {
     display: flex;
     flex-direction: column;
     align-items: center;
     position: absolute;
+    top: -13px;
 
     img {
       background-color: #fff;
@@ -124,6 +126,7 @@
 
     &:hover {
       background-color: #fdda78;
+      box-shadow: 0 4px 4px 0 #63668030;
     }
   }
 }

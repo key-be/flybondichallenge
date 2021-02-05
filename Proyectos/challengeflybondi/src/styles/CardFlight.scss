@@ -3,6 +3,11 @@
   border-radius: 0.25rem;
   box-shadow: 2px 2px 2px 0 #63668030;
   border-left: 8px solid #fdbe15;
+  transition: all ease 0.3s;
+
+  &:hover {
+    box-shadow: 4px 4px 4px 1px #63668030;
+  }
 }
 
 .card {

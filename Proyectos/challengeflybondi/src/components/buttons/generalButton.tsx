@@ -3,7 +3,7 @@ import '../../styles/Buttons.scss';
 
 interface IGeneralButtonProps{
   style: string;
-  text: string;
+  text: string | number;
   icon?: string;
   type?: 'button' | 'submit' | 'reset' | undefined;
   handleClick?: any;

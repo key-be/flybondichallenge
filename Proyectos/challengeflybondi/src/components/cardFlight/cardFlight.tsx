@@ -2,7 +2,7 @@ import * as React from 'react';
 import '../../styles/CardFlight.scss'
 import FlyInformation from './flyInformation';
 import Price from './price';
-import SelectPackage from '../packagesList/selectPackage';
+import PackageContainer from '../packagesBox/packageContainer';
 
 class CardFlight extends React.Component{
   render(){
@@ -11,7 +11,7 @@ class CardFlight extends React.Component{
         <FlyInformation />
         <Price />
       </div>
-        <SelectPackage />
+        <PackageContainer />
       </div>
   }
 }

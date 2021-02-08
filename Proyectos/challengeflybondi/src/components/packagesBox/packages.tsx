@@ -1,27 +1,26 @@
 import * as React from 'react';
+import { PACKAGES } from '../../constants/packages';
 import '../../styles/SelectPackage.scss';
 import Package from './package';
 
-class Packages extends React.Component{
+interface IPackages{
+  onSelectPackage: Function;
+  selectedPackage: number;
+}
+
+
+class Packages extends React.Component<IPackages>{
   render(){
     return <div className='packages-list'>
-        <Package  
-          name='Liviano' 
-          price={1250} 
-          amenities={['tarifa', 'equipaje']} 
-        />
-        <Package  
-          name='Viajero light' 
-          price={1650} 
-          discount={15}
-          amenities={['tarifa', 'equipaje', 'asiento', 'carryOn']}
-        />
-        <Package 
-          name='Viajero pro' 
-          price={1850} 
-          discount={20}
-          amenities={['tarifa', 'equipaje', 'asiento', 'carryOn', 'valija']}
-        />
+      {PACKAGES.map((p) => <Package  
+          selected={this.props.selectedPackage === p.id}
+          onSelectPackage={() => this.props.onSelectPackage(p)}
+          name={p.name} 
+          price={p.price} 
+          discount={p.discount}
+          amenities={p.amenities} 
+          key={p.name}
+        />)}
     </div>
   }
 }

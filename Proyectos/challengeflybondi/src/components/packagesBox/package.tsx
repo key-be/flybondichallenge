@@ -9,6 +9,8 @@ interface IPackage{
   discount?: number; 
   price: number;
   amenities: AmenityTypes[];
+  selected: boolean;
+  onSelectPackage: Function;
 }
 
 class Package extends React.Component<IPackage>{
@@ -19,7 +21,11 @@ class Package extends React.Component<IPackage>{
         {this.props.discount && <SaleBrand discount={this.props.discount} />} 
       </div>
       <Amenities amenities={this.props.amenities || []}/>
-      <GeneralButton style='btn-pack' text={this.props.price} icon='$'/>
+      <GeneralButton 
+        style={`btn-pack ${this.props.selected ? 'btn-pack-selected' : ''}`} 
+        text={this.props.price} 
+        icon='$' 
+        handleClick={() => this.props.onSelectPackage?.()}/>
     </div>
   }
 }

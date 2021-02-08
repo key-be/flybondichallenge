@@ -3,14 +3,18 @@ import '../../styles/CardFlight.scss'
 import GeneralButton from '../buttons/generalButton';
 import fire from '../../assets/icons/icon - 16 - fire.svg'
 
-class Price extends React.Component{
+interface IPrice{
+  price: number;
+}
+
+class Price extends React.Component<IPrice>{
   render(){
     return <div className='price'>
       <div className='btn-box'>
         <span>Tarifa Base</span>
         <GeneralButton 
           style='btn-price'
-          text='1.650'
+          text={this.props.price || 1250}
           icon='$'
         />
       </div>

@@ -14,7 +14,7 @@ class Price extends React.Component<IPrice>{
         <span>Tarifa Base</span>
         <GeneralButton 
           style='btn-price'
-          text={this.props.price || 1250}
+          text={this.props.price || 1650}
           icon='$'
         />
       </div>

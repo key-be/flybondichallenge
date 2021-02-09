@@ -7,7 +7,8 @@ interface ISaleBrandProps{
 
 class SaleBrand extends React.Component <ISaleBrandProps>{
   render(){
-    return <div className='sale-container'>{this.props.discount}%OFF</div>
+    return <div className={`sale-container ${this.props.discount === 0 ? 'hiden-discount' : ' '}`}>
+      {this.props.discount}%OFF</div>
   }
 }
 

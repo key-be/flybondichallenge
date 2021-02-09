@@ -4,6 +4,7 @@ import FlyInformation from './flyInformation';
 import Price from './price';
 import PackageHeader from '../packagesBox/packagesHeader';
 import Packages from '../packagesBox/packages';
+import { PACKAGES } from '../../constants/packages';
 
 class CardFlight extends React.Component{
   state ={
@@ -18,7 +19,9 @@ class CardFlight extends React.Component{
         <Price price={(this.state.selectedPackage as any)?.price}/>
       </div>
       <div className='select-package'> 
-      <PackageHeader  
+      <PackageHeader   
+        name='Viajero Light'
+        discount={15}
         onClickHandler={() => this.setState({showPackages: !this.state.showPackages})}
       />
       {
